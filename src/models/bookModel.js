@@ -22,7 +22,9 @@ const bookSchema = new mongoose.Schema({
 
   isDeleted:{type: Boolean, default: false},
 
-  releasedAt:{type: Date, required: 'Released Date is required', trim: true }
+  releasedAt:{type: Date, required: 'Released Date is required', trim: true },
+
+  bookcover:{type: String}
   
 },{ timestamps: true } );
 
